@@ -1,2 +1,0 @@
-# NewQFD
-NewQfd
