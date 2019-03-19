@@ -21,7 +21,7 @@ void Step3::paintEvent(QPaintEvent *)
     QFont font;
     font.setFamily("微软雅黑");
     font.setPointSize(14);
-   // font.setBold(true);
+    // font.setBold(true);
     painter.setFont(font);
     painter.drawText(135,45,"自相关性");
     painter.drawText(120,80,"全局质量参数");

@@ -71,7 +71,7 @@ void QNavigationWidget::paintEvent(QPaintEvent *)
             painter.fillPath(itemPath, QColor(selectedColor));
         }else {
             painter.setPen("#202020");
-            painter.fillPath(itemPath, QColor(backgroundColor));            
+            painter.fillPath(itemPath, QColor(backgroundColor));
         }
 
         painter.drawText(QRect(0, count * rowHeight, width(), rowHeight), Qt::AlignVCenter | Qt::AlignHCenter, str);

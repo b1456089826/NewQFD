@@ -7,8 +7,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-        mainWidget = new QWidget;
-      rightWidget = new QWidget;
+    mainWidget = new QWidget;
+    rightWidget = new QWidget;
     rightLayout = new QVBoxLayout(rightWidget);
     mainLayout = new QHBoxLayout(mainWidget);
     navigationWidget = new QNavigationWidget;
@@ -30,15 +30,15 @@ MainWindow::MainWindow(QWidget *parent) :
     rightLayout->addWidget(ui->stackedWidget);
     setCentralWidget(mainWidget);
     Step1_Page=new Step1(this);
-     Step2_Page=new Step2(this);
-      Step3_Page=new Step3(this);
-       Step4_Page=new Step4(this);
-        Step5_Page=new Step5(this);
-         Step6_Page=new Step6(this);
-          Step7_Page=new Step7(this);
-           Step8_Page=new Step8(this);
-            Step9_Page=new Step9(this);
-             Step10_Page=new Step10(this);
+    Step2_Page=new Step2(this);
+    Step3_Page=new Step3(this);
+    Step4_Page=new Step4(this);
+    Step5_Page=new Step5(this);
+    Step6_Page=new Step6(this);
+    Step7_Page=new Step7(this);
+    Step8_Page=new Step8(this);
+    Step9_Page=new Step9(this);
+    Step10_Page=new Step10(this);
     ui->stackedWidget->addWidget(Step1_Page);
     ui->stackedWidget->addWidget(Step2_Page);
     ui->stackedWidget->addWidget(Step3_Page);
