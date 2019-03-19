@@ -8,16 +8,18 @@ Step3::Step3(QWidget *parent) : QWidget(parent),
 }
 void Step3::paintEvent(QPaintEvent *)
 {
-
     QPainter painter(this);
     painter.setRenderHint(QPainter::TextAntialiasing, true) ;
     painter.setRenderHint(QPainter::Antialiasing,true);
     painter.setPen(QPen(Qt::black,2,Qt::SolidLine));
-    painter.drawRect(5,95,350,84);
-    painter.drawRect(80,50,200,214);
-    painter.drawLine(QPoint(80,224),QPoint(280,224));
-    painter.drawLine(QPoint(80,50),QPoint(180,5));
-    painter.drawLine(QPoint(180,5),QPoint(280,50));
+    int left=5;
+    int up=5;
+    int width=200;
+    painter.drawRect(left,95,350,84);
+    painter.drawRect(left+75,50,200,214);
+    painter.drawLine(QPoint(left+75,224),QPoint(left+75+width,224));
+    painter.drawLine(QPoint(left+75,up+45),QPoint(left+75+width/2,up));
+    painter.drawLine(QPoint(left+75+width/2,up),QPoint(left+75+width,up+45));
     QFont font;
     font.setFamily("微软雅黑");
     font.setPointSize(14);
@@ -36,3 +38,4 @@ Step3::~Step3()
 {
     delete ui;
 }
+

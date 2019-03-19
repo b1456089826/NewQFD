@@ -2,7 +2,8 @@
 #define STEP9_H
 
 #include <QWidget>
-
+#include<QPainter>
+#include<QPen>
 namespace Ui {
 class Step9;
 }
@@ -13,6 +14,7 @@ class Step9 : public QWidget
 
 public:
     explicit Step9(QWidget *parent = nullptr);
+    void paintEvent(QPaintEvent *);
     ~Step9();
 
 private:
